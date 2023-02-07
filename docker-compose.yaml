@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  rembg_api:
+    build: ./rembg_api
+    ports:
+      - "8000:80"
+    hostname: rembgapi
+  classifier_api:
+    build: ./classifier_api
+    ports:
+      - "8001:80"
+    hostname: classifier_api

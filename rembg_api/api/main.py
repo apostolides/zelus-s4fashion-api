@@ -23,7 +23,7 @@ async def removebackground(file: UploadFile = File(...)):
             imgfile.write(rembgImg)
 
     except Exception as e:
-        return {"message": str(e)}
+        return {"error": str(e)}
     
     finally:
         file.file.close()
