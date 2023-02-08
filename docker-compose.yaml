@@ -10,3 +10,8 @@ services:
     ports:
       - "8001:80"
     hostname: classifier_api
+  color_api:
+    build: ./color_api
+    ports:
+      - "8002:80"
+    hostname: color_api

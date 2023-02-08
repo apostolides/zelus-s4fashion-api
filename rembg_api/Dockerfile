@@ -9,6 +9,4 @@ RUN wget "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.on
 WORKDIR /api
 ADD ./api .
 
-EXPOSE 8000
-
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
