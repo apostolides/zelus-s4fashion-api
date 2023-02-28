@@ -15,3 +15,8 @@ services:
     ports:
       - "8002:80"
     hostname: color_api
+  vong_api:
+    build: ./vong_api
+    ports:
+      - "8003:80"
+    hostname: vong_api
